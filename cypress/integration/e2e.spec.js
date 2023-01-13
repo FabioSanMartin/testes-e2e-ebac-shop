@@ -30,9 +30,7 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         cy.addProdutos2('Augusta Pullover Jacket', 'XS', 'Orange', 1)
 
         //Checkout
-        cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
-        cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .checkout').click()
-        cy.get('#order_review_heading').should('contain', 'Your order')
+        cy.checkoutPedido1()
 
         enderecoPage.editarEnderecoFaturamento(
             dadosEndereco[2].nome,

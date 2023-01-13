@@ -25,6 +25,7 @@
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 
 
+
 Cypress.Commands.add('login', (usuario, senha) => {
     cy.get('#username').type(usuario)
     cy.get('#password').type(senha, { log: false })
@@ -69,4 +70,12 @@ Cypress.Commands.add('checkoutPedido', () => {
     cy.get('#place_order').click()
     cy.get('.page-title').should('contain', 'Pedido recebido')
 })
+
+Cypress.Commands.add('checkoutPedido1', () => {
+    cy.get('.dropdown-toggle > .text-skin > .icon-basket').click()
+        cy.get('#cart > .dropdown-menu > .widget_shopping_cart_content > .mini_cart_content > .mini_cart_inner > .mcart-border > .buttons > .checkout').click()
+        cy.get('#order_review_heading').should('contain', 'Your order')
+})
+
+
 
