@@ -1,0 +1,68 @@
+[
+    {
+        "nome": "Ana",
+        "sobrenome": "Lucia",
+        "empresa": "EBAC",
+        "endereco": "Av Paulista",
+        "numero": "200",
+        "pais": "Brasil",
+        "cidade": "São Paulo",
+        "estado": "São Paulo",
+        "cep": "83209212",
+        "telefone": "4199995555",
+        "email": "teste@teste.com"
+    },
+    {
+        "nome": "Pedro",
+        "sobrenome": "Silva",
+        "empresa": "CNB",
+        "endereco": "Rua Walter Modesto",
+        "numero": "5",
+        "pais": "Brasil",
+        "cidade": "Ourinhos",
+        "estado": "São Paulo",
+        "cep": "81364598",
+        "telefone": "5489643258",
+        "email": "exemplo@git.com"
+    },
+    {
+        "nome": "Fábio",
+        "sobrenome": "Messina",
+        "empresa": "Bananal",
+        "endereco": "Alameda brasil",
+        "numero": "1246w",
+        "pais": "Brasil",
+        "cidade": "Santos",
+        "estado": "São Paulo",
+        "cep": "72813987",
+        "telefone": "11987325546",
+        "email": "mozila@exe.com"
+    },
+    {
+        "nome": "Eliane",
+        "sobrenome": "De Souza",
+        "empresa": "Gadget LTDA",
+        "endereco": "Rua das Jacas",
+        "numero": "94 e",
+        "pais": "Brasil",
+        "cidade": "Campinas",
+        "estado": "São Paulo",
+        "cep": "99555888",
+        "telefone": "4590045622",
+        "email": "ola#@teste.com"
+    },
+    {
+        "nome": "Hugo",
+        "sobrenome": "Messina",
+        "empresa": "Global SA",
+        "endereco": "BR 277, km10",
+        "numero": "sn",
+        "pais": "Brasil",
+        "cidade": "Sorocaba",
+        "estado": "São Paulo",
+        "cep": "83233312",
+        "telefone": "6798755663",
+        "email": "gadget@mobile.com"
+    }
+    
+]

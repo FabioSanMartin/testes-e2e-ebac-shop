@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import { faker as _faker } from '@faker-js/faker';
 let dadosLogin
 
 context('Funcionalidade Login', () => {
