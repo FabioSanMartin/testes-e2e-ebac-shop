@@ -18,19 +18,20 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
     });
 
     it('Deve fazer um pedido na loja Ebac Shop de ponta a ponta', () => {
-        //Login
+        
         cy.get('#username').type(perfil.usuario)
         cy.get('#password').type(perfil.senha)
         cy.get('.woocommerce-form > .button').click()
 
-        //Adicionar produto
+        
         cy.addProdutos('Ajax Full-Zip Sweatshirt', 'XS', 'Red', 1)
-        cy.addProdutos2('Atomic Endurance Running Tee', 'S', 'Black', 1)
-        cy.addProdutos2('Autumn Pullie', 'XS', 'Green', 1)
-        cy.addProdutos2('Augusta Pullover Jacket', 'XS', 'Orange', 1)
+        cy.addProdutos('Atomic Endurance Running Tee', 'S', 'Black', 1, 2)
+        cy.addProdutos('Autumn Pullie', 'XS', 'Green', 1, 2)
+        cy.addProdutos('Augusta Pullover Jacket', 'XS', 'Orange', 1, 2)
 
-        //Checkout
-        cy.checkoutPedido1()
+            cy.checkoutPedido1()
+
+            cy.get('#order_review_heading').should('contain', 'Your order')
 
         enderecoPage.editarEnderecoFaturamento(
             dadosEndereco[2].nome,
@@ -47,12 +48,11 @@ context('Exercicio - Testes End-to-end - Fluxo de pedido', () => {
         )
         cy.checkoutPedido()
 
+        cy.get('.page-title').should('contain', 'Pedido recebido')
+
 
 
     })
-
-
-
 
 
 
